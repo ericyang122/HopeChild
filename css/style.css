@@ -9856,11 +9856,15 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .testimonial-carousel .owl-dot.active {
-  background: #17a2b8;
+  background: #6f42c1;
 }
 
 .contact-form .help-block ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+.fotoHopeChild{
+  height: 17%;
+  width: 17%;
 }
