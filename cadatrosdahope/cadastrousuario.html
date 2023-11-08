@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+,<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <form action="/cadatrosdahope/cadastrousuario" method="post">
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,6 +26,7 @@
 
     <!-- Main CSS-->
     <link href="css/main.css" rel="stylesheet" media="all">
+</form>
 </head>
 
 <body>
@@ -38,38 +40,30 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Nome do responsável</label>
-                                    <input class="input--style-4" type="text" name="first_name">
+                                    <input class="input--style-4" type="text" name="nome_responsavel">
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Nome da criança</label>
-                                    <input class="input--style-4" type="text" name="last_name">
+                                    <input class="input--style-4" type="text" name="nome_crianca">
                                 </div>
                             </div>
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">Data de nascimento da Criança</label>
+                                    <label class="label">Data de nascimento</label>
                                     <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker" type="text" name="birthday">
-                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                        <input class="input--style-4" type="date" name="data_nascimento">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">Genêro Da Criança</label>
-                                    <div class="p-t-10">
-                                        <label class="radio-container m-r-45">Masculino
-                                            <input type="radio" checked="checked" name="gender">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="radio-container">Feminino
-                                            <input type="radio" name="gender">
-                                            <span class="checkmark"></span>
-                                        </label>
+                                    <label class="label">Genero da Criança</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4" type="text" name="genero_crianca">
                                     </div>
                                 </div>
                             </div>
@@ -84,22 +78,16 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Número de telefone</label>
-                                    <input class="input--style-4" type="text" name="phone">
+                                    <input class="input--style-4" type="text" name="numeroTelefone">
                                 </div>
                             </div>
                         </div>
                         <div class="input-group">
                             <label class="label">Endereço</label>
-                            <input class="input--style-4" type="text" name="phone">
+                            <input class="input--style-4" type="text" name="endereco">
                         </div>
                         <div class="p-t-15">
-                            <button id="btnCadastrar" class="btn btn--radius-2 btn--blue" style="margin-left: 65%;" type="button">Cadastrar</button>
-                            
-                            <script>
-                                document.getElementById('btnCadastrar').addEventListener('click', function() {
-                                    window.location.href = "../index.html";
-                                });
-                                </script>
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
                         </div>
                     </form>
                 </div>
@@ -116,6 +104,7 @@
 
     <!-- Main JS-->
     <script src="js/global.js"></script>
+
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
