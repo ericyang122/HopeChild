@@ -7,7 +7,9 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
+//app.use(express.static('lib'));
 const port = 3000;
+
 
 
 //configurando o acesso ao mongodb
